@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            width: 100%;
+            height: 650px;
+           background: url("bg.jpg");
+           
+        }
+        .net{
+            width: 120px;
+            margin-left: 140px;
+            display: flex;
+            position: absolute; 
+        }
+       
+        .first{
+            float: right;
+            margin-right: 160px;
+            width: 100px;
+            height: 30px;
+            background-color: transparent;
+            border-radius: 5px;
+            color: rgb(253, 247, 247);
+            font-weight: bolder;
+            
+        }
+         .second{
+            float: right;
+            margin-left: 50px;
+            height: 30px;
+            width: 100px;
+            background-color: red;
+            border-color: red;
+            border-radius: 5px;
+            color: white;
+         }
+         .write{
+            color: white;
+            margin-left: 250px;
+            font-size: 70px;
+            font-family: Arial;
+         }
+         .head{
+            color: white;
+            font-size: 40px;
+            margin-left: 450px;
+         }
+         .input{
+            width: 350px;
+            height: 50px;
+            border: 2px solid red;
+            margin-left: 540px;
+            border-radius: 5px;
+            background-color: rgba(0, 0, 0, 0.315);
+            color: white;
+         }
+         .btn{
+            width: 200px;
+            height: 50px;
+            float: right;
+            margin-right: 360px;
+            border-radius: 5px;
+            border: 2px solid red;
+            background-color: red;
+            color: whitesmoke;
+            font-size: 30px;
+         }
+         .header{
+            width: 100%;
+            height: 10px;
+            border: 2px solid rgba(128, 128, 128, 0.568);
+            background-color: rgba(128, 128, 128, 0.568);
+         }
+         .image{
+            float: right;
+            margin-right: 100px;
+         }
+         .type{
+            color: whitesmoke;
+            font-size: 40px;
+            margin-left: 50px;
+         }
+         .got{
+            color: white;
+            margin-left: 55px;
+         }
+         a{
+            text-decoration: none;
+            color: wheat;
+         }
+         .make{
+            float: right;
+            color: whitesmoke;
+            font-size: 60px;
+            font-weight: bold;
+            margin-right: 120px;
+            margin-top: 200px;
+         }
+         .kid{
+            margin-right: 50px;
+            float: right;
+         }
+         .pro{
+            color: white;
+            font-size: 50px;
+            margin-top: 50px;
+            font-family: Arial;
+            margin-left: 50px;
+         }
+         .the{
+            color: whitesmoke;
+            margin-left: 50px;
+            margin-top: 50px;
+         }
+         .them{
+            color: whitesmoke;
+            font-size: 50px;
+         }
+         .count{
+            width: 1000px;
+            height: 70px;
+            border: 2px solid rgba(128, 128, 128, 0.375);
+            background-color: rgba(128, 128, 128, 0.462);
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 30px;
+         }
+         .count:hover {
+            background-color: rgba(128, 128, 128, 0.821);
+         }
+         .had{
+            color: whitesmoke;
+            float: right;
+         }
+         .had:hover {
+            font-family: Arial;
+         }
+
+         .loader{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .loader{
+            border:4px solid transparent;
+            border-top: 4px solid red;
+            border-radius: 50%;
+            width:50px;
+            height: 50px;
+            animation: spin 2s linear infinite;
+            margin: 20% auto;
+        
+        }
+        @keyframes spin{
+            0%{transform: rotate(0deg);}
+            100%{transform: rotate(360deg);}
+        }
+      
+    </style> 
+</head>
+<body bgcolor="black">
+   <div class="loader">
+      <div class="load"></div>
+   </div>
+    <div class="box">
+        <br>
+        <br>
+        <img src="net.png" class="net">
+        <button class="first"><a href="#">English</a></button>
+        <button class="second"><a href="netflix signup/signup.html" target="_blank">Sign in</a></button>
+
+        <br>
+        <br>
+        <br>
+        <br><br><br><br><br>
+        <br><br><br><br>
+        <h1 class="write">Unlimited movies, & TV Shows</h1>
+        <br>
+        <h3 class="head">Watch Anywhere. Cancel Anytime</h3>
+        <br>
+        <br>
+        <br>
+        <input type="email" placeholder="Email Address" class="input">
+        <button class="btn"><a href="#"> Started</a></button>
+
+    </div>
+    <div class="header"></div>
+    <br>
+   <img src="tv.png" class="image">
+   <br>
+   <br>
+   <br><br><br><br><br><br><br><br><br>
+   <h1 class="type">Enjoy On Your TV</h1>
+   <br>
+   <h3 class="got">Watch on smart TVs, PlayStation, Xbox, Chromecast,<br> Apple TV, Blu-ray players and more.</h3>
+   <br><br><br><br><br><br><br><br><br><br><br><br>
+   <div class="header"></div>
+   <br>
+   <img src="phone.jpg">
+
+   <h1 class="make">Download your shows to <br> watch offline</h1>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <div class="header"></div>
+   <br>
+   <img src="kid.png" class="kid">
+   <h1 class="pro">Create profiles for kids</h1>
+   
+   <h2 class="the">Send children on adventures with their favourite<br> characters in a space made just for them—free with<br> your membership.</h2>
+
+<br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="header"></div>
+<br>
+<br>
+<center><h1 class="them">Frequently Asked Question</h1></center>
+<br>
+<br>
+<center>
+    <a href="#"><div class="count">What is Netflix ?</div>
+    <br>
+    <div class="count">How Much Does Netflix Cost ?</div>
+    <br>
+    <div class="count">Where Can I Watch ?</div>
+    <br>
+    <div class="count">How Do I Cancel ?</div>
+    <br>
+    <div class="count">What Can I Watch On Netflix ?</div>
+    <br>
+    <div class="count">Is Netflix Good For Kids ?</div>
+    </a>
+</center>
+  <br>
+  <br>
+  <div class="header"></div>
+  <br>
+  <br>
+  <h1 class="had">Website Made By Chetan Yadav</h1>
+
+  <script>
+   window.addEventListener('load', function () {
+     document.querySelector('.loader').style.display = 'none';
+   });
+ </script>  
+
+
+</body>
+</html>
